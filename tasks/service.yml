@@ -1,3 +1,5 @@
 ---
-- name: start and Enable httpd service
-  service: name=httpd state=restarted enabled=yes
+- hosts:localhost
+  become:yes
+  - name: start and Enable httpd service
+    service: name=httpd state=restarted enabled=yes
