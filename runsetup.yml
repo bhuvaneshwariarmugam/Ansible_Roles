@@ -2,6 +2,6 @@
 - hosts: localhost
   become: yes
   vars:
-    my_bool: "{{ bool }}"
+    bool: "{{ bool }}"
   roles:
   - apache
