@@ -2,6 +2,6 @@
 # tasks file for /etc/ansible/roles/apache
 
 - import_tasks: install.yml
-  when: bool=='True'
+  when: bool == 'True'
 - import_tasks: configure.yml
 - import_tasks: service.yml
