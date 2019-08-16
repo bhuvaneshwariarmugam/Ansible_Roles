@@ -2,6 +2,6 @@
 - name: Copy index.html
   copy: src=files/index.html dest=/var/www/html/index.html
 - name: copy style.css
-  copy: src= files/style.css dest=var/www/html
+  copy: src=files/style.css dest=/var/www/html/
   notify:
   - restart apache
