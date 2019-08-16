@@ -1,5 +1,5 @@
 ---
 - vars: 
-    bool: "{{ bool }}}
+    bool: "{{ bool }}"
 - name: Install httpd package
   yum: name=httpd state=latest
